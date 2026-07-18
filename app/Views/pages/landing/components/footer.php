@@ -45,7 +45,7 @@
             <h4 class="text-sm font-semibold text-foreground mb-4">Legal</h4>
             <ul class="space-y-3 text-sm">
                 <li>
-                    <a href="#<?= base_url('/') ?>" class="text-muted-foreground hover:text-foreground transition">Kebijakan Privasi</a>
+                    <a href="<?= base_url('/') ?>" class="text-muted-foreground hover:text-foreground transition">Kebijakan Privasi</a>
                 </li>
                 <li>
                     <a href="<?= base_url('/') ?>" class="text-muted-foreground hover:text-foreground transition">Syarat & Ketentuan</a>

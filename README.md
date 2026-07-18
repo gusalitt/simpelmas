@@ -1,30 +1,31 @@
 # SIMPELMAS - Sistem Pengaduan & Laporan Masyarakat
 
-SIMPELMAS adalah aplikasi web berbasis PHP Native untuk pengaduan dan laporan masyarakat. Aplikasi ini memungkinkan masyarakat untuk melaporkan permasalahan, petugas untuk memproses pengaduan, dan admin untuk mengelola seluruh sistem.
+SIMPELMAS is a PHP Native-based web application for public complaints and reports. This application enables members of the public to report issues, staff to process complaints, and administrators to manage the entire system.
 
-Website ini memiliki tiga peran pengguna yaitu Masyarakat (pelapor), Petugas, dan Admin. Masing-masing peran memiliki hak akses yang berbeda sesuai dengan fungsinya.
+This website has three user roles: Members of the Public (reporters), Staff, and Admins. Each role has different access rights in accordance with its function.
 
-## Fitur
+## Feature
 
-- Buat pengaduan dengan unggah foto pendukung
-- Pantau status pengaduan (Baru, Diproses, Selesai)
-- Diskusi melalui fitur komentar pada setiap pengaduan
-- Dashboard untuk petugas dan admin
-- Kelola kategori pengaduan
-- Cetak laporan dalam format PDF
-- Kelola data pengguna (khusus admin)
-- Update profil dan password
+- Submit a complaint by uploading supporting photos
+- Track the status of complaints (New, In Progress, Closed)
+- Discuss issues via the comments feature on each complaint
+- Dashboard for agents and administrators
+- Manage complaint categories
+- Print reports in PDF format
+- Manage user data (administrators only)
+- Update profile and password
 
-## Teknologi yang Digunakan
+
+## Technology Used
 
 - Frontend: HTML, CSS, Tailwind CSS, JavaScript
 - Backend: PHP Native
 - Database: MySQL
 - Web Server: Apache (XAMPP / Laragon)
 
-## Cara Menjalankan Proyek Ini
+## How to Run This Project
 
-### 1. Clone repositori
+### 1. Clone the repository
 
 ```bash
 git clone https://github.com/gusalitt/simpelmas.git
@@ -37,15 +38,15 @@ cd simpelmas
 pnpm install
 ```
 
-### 3. Copy .env.example ke .env
+### 3. Copy .env.example file to .env file
 
 ```bash
 cp .env.example .env
 ```
 
-### 4. Edit file .env
+### 4. Edit the file .env
 
-Buka file `.env` dan sesuaikan konfigurasi berikut:
+Open the `.env` file and adjust the following settings: 
 
 ```env
 APP_URL="http://localhost/simpelmas"
@@ -60,20 +61,20 @@ DB_PASSWORD=""
 ENCRYPTION_KEY="your_encryption_key"
 ```
 
-### 5. Buat database
+### 5. Create the database
 
-Buat database baru di MySQL sesuai dengan `DB_NAME` yang sudah Anda set di `.env`.
+Create a new database in MySQL with the name `DB_NAME` as set in `.env` file.
 
-### 6. Jalankan migrasi dan seeder
+### 6. Run migration and seeder
 
 ```bash
 cd app/Database/
 php migrate.php && php seed.php
 ```
 
-### 7. Akses aplikasi
+### 7. Access the app
 
-Buka browser dan akses alamat berikut:
+Open the browser and go to the following address:
 
 ```
 http://localhost/simpelmas
